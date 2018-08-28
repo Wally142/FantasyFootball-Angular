@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MessageBoardComponent } from './message-board/message-board.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageBoardComponent
   ],
   imports: [
     BrowserModule
