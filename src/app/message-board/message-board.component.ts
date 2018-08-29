@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message-board.component.css']
 })
 export class MessageBoardComponent implements OnInit {
-  newcomponent = "Entered in new component created";
+ 
 
   constructor() { }
 
