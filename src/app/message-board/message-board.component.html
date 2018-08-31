@@ -1,10 +1,13 @@
-
 <div class="container text-center">
-  <button class="btn btn-primary">Post Message</button>
+  <input class="form-control" name="comment" placeholder="Comment" ngModel>
+  <br>
+  <button class="btn btn-primary" (click)="submitComment()">Post Message</button>
+  <br>
+  <br>
   <div class="container">
     <div class="jumbotron">
 
     </div>
   </div>
-   {{ todaydate }}
+  {{ todaydate }}
 </div>

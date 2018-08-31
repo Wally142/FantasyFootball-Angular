@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MessageBoardComponent } from './message-board/message-board.component';
 import { FootballService } from './football.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { FootballService } from './football.service';
     MessageBoardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [FootballService],
   bootstrap: [AppComponent]
