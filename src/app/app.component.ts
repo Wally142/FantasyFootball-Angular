@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FootballService } from './football.service';
 
 @Component({
   selector: 'app-root',

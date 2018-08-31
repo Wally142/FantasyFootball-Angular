@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MessageBoardComponent } from './message-board/message-board.component';
+import { FootballService } from './football.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { MessageBoardComponent } from './message-board/message-board.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [FootballService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

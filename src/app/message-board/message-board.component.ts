@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FootballService } from '../football.service';
 
 @Component({
   selector: 'app-message-board',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageBoardComponent implements OnInit {
  
-
-  constructor() { }
-
+  todaydate;
+  constructor(private football: FootballService) { }
   ngOnInit() {
+    this.todaydate = this.football.showTodayDate();
   }
 
 }
