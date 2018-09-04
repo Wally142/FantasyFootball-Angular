@@ -1,12 +1,14 @@
 <div class="container text-center">
-  <input class="form-control" name="comment" placeholder="Comment" ngModel>
-  <br>
-  <button class="btn btn-primary" (click)="submitComment()">Post Message</button>
+  <form class="form-group" #comment="ngForm" (ngSubmit)="submitComment(comment.value)">
+    <input class="form-control" type="text" name="comment" placeholder="add comment" ngModel>
+    <br/>
+    <input class="btn btn-primary" type="submit" value="Post">
+  </form>
   <br>
   <br>
   <div class="container">
     <div class="jumbotron">
-
+      {{ comments }}
     </div>
   </div>
   {{ todaydate }}

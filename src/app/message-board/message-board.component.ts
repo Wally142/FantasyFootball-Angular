@@ -9,11 +9,14 @@ import { FootballService } from '../football.service';
 export class MessageBoardComponent implements OnInit {
 
   todaydate;
+  comments;
   constructor(private football: FootballService) { }
   ngOnInit() {
     this.todaydate = this.football.showTodayDate();
+    this.comments = this.football.comments;
+    console.log(this.comments);
   }
   submitComment(data) {
-    alert("hello");
+    this.football.postComment(data.comment);
   }
 }

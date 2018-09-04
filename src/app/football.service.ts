@@ -10,4 +10,14 @@ export class FootballService {
     let ndate = new Date();
     return ndate;
   }
+
+  comments = ['dog', 'cat'];
+  // getComments() {
+     
+  // }
+
+postComment(data) {
+  console.log(data);
+}
+
 }
