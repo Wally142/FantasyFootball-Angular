@@ -18,5 +18,7 @@ export class MessageBoardComponent implements OnInit {
   }
   submitComment(data) {
     this.football.postComment(data.comment);
+    this.comments = this.football.comments;
   }
+  
 }

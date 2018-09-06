@@ -11,13 +11,14 @@ export class FootballService {
     return ndate;
   }
 
-  comments = ['Fantasy', 'Football'];
+  comments = [];
   // getComments() {
      
   // }
 
 postComment(data) {
   console.log(data);
+  this.comments = [data];
 }
 
 }
