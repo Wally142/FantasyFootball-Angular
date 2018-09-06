@@ -11,7 +11,7 @@ export class FootballService {
     return ndate;
   }
 
-  comments = ['dog', 'cat'];
+  comments = ['Fantasy', 'Football'];
   // getComments() {
      
   // }
